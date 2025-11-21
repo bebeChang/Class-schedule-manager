@@ -102,7 +102,7 @@ export function Schedule() {
 
                 {/* Days Grid */}
                 <div className="grid grid-cols-7 gap-y-2">
-                    {calendarDays.map((date, idx) => {
+                    {calendarDays.map((date) => {
                         const isSelected = isSameDay(date, selectedDate);
                         const isCurrentMonth = isSameMonth(date, viewDate);
                         const isTodayDate = isToday(date);
